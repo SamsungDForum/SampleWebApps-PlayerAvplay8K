@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../assets/RobotoMono-Regular.ttf');
+}
+
+.player {
+    width: 1262px;
+    height: 710px;
+    margin-bottom: 10px;
+}
+
+#av-player {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#av-player.fullscreenMode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+}
+
+.buttons.fullscreenMode {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border-top: none;
+    z-index: 1;
+}
+
+.time {
+    position: absolute;
+    top: 11vh;
+    right: 31vw;
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    font-size: 36px;
+    font-family: 'RobotoMono', monospace;
+}
+
+.time.fullscreenMode {
+    top: 1vh;
+    right: 1vw;
+    z-index: 1;
+}
+
+.popup-box {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 9%;
+    left: 10%;
+    background-color: #f5fffa;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(215, 201, 201);
+    z-index: 2;
+    border-radius: 6px;
+}
+
+#video-list {
+    position: relative;
+    top: 90px;
+    left: 80px;
+    height: 692px;
+    width: 1228px;
+    overflow: scroll;
+    border: 1px solid rgb(215, 201, 201);
+    border-radius: 6px;
+}
+
+#video-list > button {
+    margin: 10px;
+    width: 1200px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    color: #f00;
+    border-color: #f00;
+}
+
+.close.active {
+    background-color: #f00;
+}
+
+.hidden {
+    display: none;
+}

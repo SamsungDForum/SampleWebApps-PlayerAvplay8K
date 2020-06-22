@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <title>PlayerAvplay8K</title>
+    <script src="$WEBAPIS/webapis/webapis.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="appName">PlayerAvplay8K</h1>
+        <h2 class="appVersion">2.0.0</h2>
+        <div class="tvInfo">
+            <p class="firmware"></p>
+            <p class="model"></p>
+        </div>
+    </header>
+    <section class="main">
+        <div class="player">
+            <object id="av-player" type="application/avplayer"></object>
+            <div class="time"></div>
+        </div>
+        <div id="video-select">
+            <h3>Current Video:</h3>
+            <button data-list-item class="selected-video">8K 75Mb SDR MPD</button>
+        </div>
+
+
+
+        <div class="popup-box hidden">
+            <div id="closeButton">
+                <button data-list-item class="close">x</button>
+            </div>
+            <div id="video-list"></div>
+        </div>
+
+    </section>
+    <section class="logs">
+        <h2>Logs:</h2>
+        <div data-list-item class="logsContainer">
+
+        </div>
+    </section>
+    <section class="info">
+        <section class="info-container">
+            <h2>Info</h2>
+
+            <p>This application demonstrates the use of AVPlay plugin as video player for 8K content only</p>
+
+            <p>You can change the source for video content by modifying contents of <code>config</code> variable in <code>main.js</code> file</p>
+
+        </section>
+    </section>
+    <section class="buttons" id="buttons">
+        <button data-list-item class="play">Play</button>
+        <button data-list-item class="stop">Stop</button>
+        <button data-list-item class="pause">Pause</button>
+        <button data-list-item class="ff">Fast Forward</button>
+        <button data-list-item class="rew">Rewind</button>
+        <button data-list-item class="fullscreen">Toggle fullscreen</button>
+
+        <button data-list-item class="toggle-info">Show/hide info</button>
+    </section>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/keyhandler.js"></script>
+    <script src="./js/logger.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/videoPlayer.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
